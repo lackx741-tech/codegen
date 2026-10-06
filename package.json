@@ -1,0 +1,40 @@
+{
+  "name": "visual-web-developer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen",
+    "codegen:local": "playwright codegen --viewport-size=1280,720 http://localhost:5173",
+    "codegen:mobile": "playwright codegen --device=\"iPhone 13\" http://localhost:5173",
+    "codegen:auth": "playwright codegen --save-storage=auth/state.json",
+    "record": "tsx tools/record.ts",
+    "capture": "tsx tools/capture-page.ts",
+    "read-page": "tsx tools/read-page.ts",
+    "inspect": "tsx tools/inspect-page.ts",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "trace": "playwright show-trace",
+    "report": "playwright show-report artifacts/reports/html",
+    "verify": "playwright test && tsx tools/create-report.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
+  }
+}
