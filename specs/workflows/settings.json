@@ -1,0 +1,1 @@
+{ "workflow": "settings", "steps": ["open page", "open menu", "select settings", "open modal", "select option", "confirm"] }

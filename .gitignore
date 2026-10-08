@@ -1,0 +1,10 @@
+node_modules
+dist
+artifacts/test-results
+artifacts/reports/*
+artifacts/traces/*
+artifacts/videos/*
+auth/state.json
+playwright-report
+test-results
+!.gitkeep
